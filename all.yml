@@ -1,38 +1,13 @@
 ---
+# file: site.yml
+
 - hosts: all
   gather_facts: false
   roles:
-
-  ## general
-  - role: cask_package
-    package_name: textmate
-  - role: cask_package
-    package_name: macvim
-  - role: cask_package
-    package_name: iterm2
-  - role: cask_package
-    package_name: firefox
-  - role: cask_package
-    package_name: chromium
-  - role: cask_package
-    package_name: dropbox
-  - role: cask_package
-    package_name: 1password
-  - role: cask_package
-    package_name: apptrap
-  - role: cask_package
-    package_name: alfred
-  - role: cask_package
-    package_name: skype
-  - role: cask_package
-    package_name: slack
-  - role: brew_package
-    package_name: htop
-  - role: brew_package
-    package_name: ack
-
- ## entertainment
-  - role: cask_package
-    package_name: spotify
-  - role: cask_package
-    package_name: vlc
+    - {role: dashboard, disabled: YES, tags: ['basic', 'all']}
+    - {role: rbenv, tags: ['basic', 'all']}
+    - {role: legit, tags: ['basic', 'all']}
+    - {role: hub, tags: ['basic', 'all']}
+    - {role: base, tags: ['system', 'all']}
+    - {role: applications, tags: ['applications', 'all']}
+    - {role: user, tags: ['user', 'all']}

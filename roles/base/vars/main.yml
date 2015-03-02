@@ -7,10 +7,10 @@ cask_taps:
   - ['caskroom/fonts']
 
 brew_packages_bootstrap:
-  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt']
+  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack']
 
 cask_packages_bootstrap:
-  - ['asepsis', 'font-source-code-pro', 'font-sauce-code-powerline', 'java']
+  - ['asepsis', 'font-source-code-pro', 'font-sauce-code-powerline', 'java', 'alfred']
 
 npm_global_packages:
   - ['grunt', 'grunt-cli', 'bower']

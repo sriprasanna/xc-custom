@@ -1,2 +1,26 @@
 ---
-# tasks file for applications
+
+- name: tap_brew
+  homebrew_tap: tap={{ item }} state=present
+  with_flattened:
+    - brew_taps
+
+- name: cask_brew
+  homebrew_tap: tap={{ item }} state=present
+  with_flattened:
+    - cask_taps
+
+- name: install_brew_packages
+  homebrew: name={{ item }} state=installed
+  with_flattened:
+    - brew_packages_bootstrap
+
+- name: install_brew_packages
+  homebrew_cask: name={{ item }} state=present
+  with_flattened:
+    - cask_packages_bootstrap
+
+- name: install_npm_packages
+  npm: name={{ item }} global=yes state=present
+  with_flattened:
+    - npm_global_packages
