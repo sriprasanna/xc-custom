@@ -1,0 +1,9 @@
+---
+# file: site.yml
+
+- hosts: all
+  sudo: true
+  roles:
+    - {role: base, tags: ['system', 'all']}
+    - {role: applications, tags: ['applications', 'all']}
+    - {role: user, tags: ['user', 'all']}
