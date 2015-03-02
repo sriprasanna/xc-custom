@@ -1,2 +1,16 @@
 ---
-# vars file for user
+# vars file for base
+brew_taps:
+  - []
+
+cask_taps:
+  - []
+
+brew_packages_bootstrap:
+  - []
+
+cask_packages_bootstrap:
+  - []
+
+npm_global_packages:
+  - []
