@@ -1,5 +1,8 @@
 ---
 
+- name: switch_to_zsh
+  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
 - name: tap_brew
   homebrew_tap: tap={{ item }} state=present
   with_flattened:
