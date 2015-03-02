@@ -4,6 +4,10 @@
 - hosts: all
   gather_facts: false
   roles:
+    - {role: dashboard, disabled: YES, tags: ['basic', 'all']}
+    - {role: rbenv, tags: ['basic', 'all']}
+    - {role: legit, tags: ['basic', 'all']}
+    - {role: hub, tags: ['basic', 'all']}
     - {role: base, tags: ['system', 'all']}
     - {role: applications, tags: ['applications', 'all']}
     - {role: user, tags: ['user', 'all']}
