@@ -2,7 +2,7 @@
 # file: site.yml
 
 - hosts: all
-  sudo: true
+  gather_facts: false
   roles:
     - {role: base, tags: ['system', 'all']}
     - {role: applications, tags: ['applications', 'all']}
