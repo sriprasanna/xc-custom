@@ -7,7 +7,7 @@ cask_taps:
   - []
 
 brew_packages_bootstrap:
-  - ['mutt']
+  - ['mutt', 'profanity']
 
 cask_packages_bootstrap:
   - ['textmate', 'macvim', 'iterm2', 'firefox', 'chromium', 'dropbox', '1password', 'apptrap', 'skype', 'slack', 'spotify', 'vlc', 'jitsi', 'intellij-idea-ce', 'vagrant', 'libreoffice', 'virtualbox', 'limechat']
