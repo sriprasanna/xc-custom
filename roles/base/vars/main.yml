@@ -7,7 +7,7 @@ cask_taps:
   - ['caskroom/fonts']
 
 brew_packages_bootstrap:
-  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag']
+  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag', 'iftop']
 
 cask_packages_bootstrap:
   - ['asepsis', 'font-source-code-pro', 'font-sauce-code-powerline', 'java']
