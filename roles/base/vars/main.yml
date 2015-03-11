@@ -14,3 +14,5 @@ cask_packages_bootstrap:
 
 npm_global_packages:
   - ['grunt', 'grunt-cli', 'bower']
+
+fish_path: /usr/local/bin/fish
