@@ -25,14 +25,14 @@
   with_flattened:
     - npm_global_packages
 
-- name: add_fish_to_shells
-  lineinfile: dest=/etc/shells line={{ fish_path }} state=present
-  sudo: yes
-  sudo_user: "{{ default_user }}"
-
 - name: current_shell
   shell: echo $SHELL | grep -c fish || true
   register: fish_shell
+
+- name: add_fish_to_shells
+  lineinfile: dest=/etc/shells line={{ fish_path }} state=present
+  sudo: yes
+  when: fish_shell.stdout != "1"
 
 - name: switch_to_fish
   shell: chsh -s {{ fish_path }} {{ default_user }}
