@@ -30,5 +30,10 @@
   sudo: yes
   sudo_user: "{{ default_user }}"
 
+- name: current_shell
+  shell: echo $SHELL | grep -c fish || true
+  register: fish_shell
+
 - name: switch_to_fish
   shell: chsh -s {{ fish_path }} {{ default_user }}
+  when: fish_shell.stdout != "1"

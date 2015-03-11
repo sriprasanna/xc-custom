@@ -1,13 +1,13 @@
 ---
 # vars file for base
 brew_taps:
-  - ['gapple/services']
+  - ['gapple/services', 'thoughtbot/formulae']
 
 cask_taps:
   - ['caskroom/fonts']
 
 brew_packages_bootstrap:
-  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag', 'iftop']
+  - ['vim', 'node', 'android-sdk', 'redis', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag', 'rcm']
 
 cask_packages_bootstrap:
   - ['asepsis', 'font-source-code-pro', 'font-sauce-code-powerline', 'java']
