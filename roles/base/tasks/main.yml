@@ -28,6 +28,7 @@
 - name: add_fish_to_shells
   lineinfile: dest=/etc/shells line={{ fish_path }} state=present
   sudo: yes
+  sudo_user: "{{ default_user }}"
 
 - name: switch_to_fish
   shell: chsh -s {{ fish_path }} {{ default_user }}
