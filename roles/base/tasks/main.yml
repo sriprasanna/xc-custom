@@ -20,12 +20,6 @@
   with_flattened:
     - cask_packages_bootstrap
 
-- name: install_vim_with_lua
-  homebrew: name=vim state=present install_options=with-lua
-
-#- name: install_macvim_with_lua
-#  homebrew: name=macvim state=present install_options=with-lua,with-cscope
-
 - name: install_npm_packages
   npm: name={{ item }} global=yes state=present
   with_flattened:
