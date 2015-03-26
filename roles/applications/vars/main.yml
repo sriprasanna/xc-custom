@@ -1,13 +1,13 @@
 ---
 # vars file for base
 brew_taps:
-  - []
+  - ['nviennot/tmate']
 
 cask_taps:
   - []
 
 brew_packages_bootstrap:
-  - ['mutt', 'profanity', 'gpg2']
+  - ['mutt', 'profanity', 'gpg2', 'tmate']
 
 cask_packages_bootstrap:
   - ['textmate', 'macvim', 'iterm2', 'firefox', 'chromium', 'dropbox', '1password', 'apptrap', 'skype', 'slack', 'spotify', 'vlc', 'jitsi', 'intellij-idea-ce', 'vagrant', 'libreoffice', 'virtualbox', 'limechat', 'deluge']
