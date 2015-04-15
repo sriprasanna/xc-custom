@@ -25,5 +25,8 @@
   with_flattened:
     - npm_global_packages
 
+- name: create_user_log_directory
+  file: path=/Users/snark/.log state=directory
+
 - name: autostart_offlineimap
   copy: src=snark.offlineimap.plist dest=/Users/snark/Library/LaunchAgents/snark.offlineimap.plist
