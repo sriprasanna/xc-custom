@@ -30,3 +30,6 @@
 
 - name: autostart_offlineimap
   copy: src=snark.offlineimap.plist dest=/Users/snark/Library/LaunchAgents/snark.offlineimap.plist
+
+- name: symlink_pinentry
+  file: dest=/usr/local/bin/pinentry-program src=/usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac state=link
