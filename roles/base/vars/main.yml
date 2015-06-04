@@ -4,10 +4,10 @@ brew_taps:
   - ['gapple/services', 'thoughtbot/formulae']
 
 cask_taps:
-  - ['caskroom/fonts', 'caskroom/java']
+  - ['caskroom/fonts']
 
 brew_packages_bootstrap:
-  - ['vim', 'node', 'android-sdk', 'redis', 'java', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag', 'rcm', 'mtr', 'tpp', 'tsung', 'task', 'calcurse', 'tig', 'slurm', 'profanity', 'weechat', 'tmux', 'valgrind']
+  - ['vim', 'node', 'android-sdk', 'redis', 'Caskroom/cask/java', 'elasticsearch', 'postgres', 'heroku-toolbelt', 'htop', 'ack', 'tarsnap', 'fish', 'tree', 'peco', 'ag', 'rcm', 'mtr', 'tpp', 'tsung', 'task', 'calcurse', 'tig', 'slurm', 'profanity', 'weechat', 'tmux', 'valgrind']
 
 cask_packages_bootstrap:
   - ['asepsis', 'font-source-code-pro', 'font-sauce-code-powerline', 'java']
