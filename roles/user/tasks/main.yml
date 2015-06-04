@@ -1,15 +1,13 @@
 ---
 
-- name: switch_to_zsh
-  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+- name: switch_to_oh_my_fish
+  shell: curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
 
 - name: clone_dotfiles
-  git: repo=git@github.com:sriprasanna/dotfiles.git dest=/Users/snark/src/github.com/sriprasanna/dotfiles
+  git: repo=git@github.com:sriprasanna/.dotfiles.git dest=/Users/snark/.dotfiles
 
 - name: install_dotfiles
-  shell: ruby install.rb
-  args:
-    chdir: /Users/snark/src/github.com/sriprasanna/dotfiles
+  shell: rcup -v
 
 - name: tap_brew
   homebrew_tap: tap={{ item }} state=present
