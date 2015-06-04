@@ -1,8 +1,4 @@
 ---
-
-- name: switch_to_oh_my_fish
-  shell: curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
-
 - name: clone_dotfiles
   git: repo=git@github.com:sriprasanna/.dotfiles.git dest=/Users/snark/.dotfiles
 
