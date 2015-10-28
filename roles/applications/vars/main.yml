@@ -13,4 +13,4 @@ cask_packages_bootstrap:
   - ['textmate', 'macvim', 'iterm2', 'firefox', 'google-chrome', 'dropbox', '1password', 'apptrap', 'skype', 'slack', 'genymotion', 'vlc', 'jitsi', 'intellij-idea-ce', 'vagrant', 'libreoffice', 'virtualbox', 'limechat', 'deluge', 'phantomjs', 'gpgtools', 'kindle', 'genymotion', 'unrarx', 'flash', 'ynab', 'atom', 'adium']
 
 npm_global_packages:
-  - []
+  - ['aglio']
