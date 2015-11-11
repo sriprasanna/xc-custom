@@ -20,10 +20,20 @@
   with_flattened:
     - cask_packages_bootstrap
 
+- name: link_brew_packages
+  command: brew link --force ncurses
+  with_flattened:
+    - brew_link_packages
+
 - name: install_npm_packages
   npm: name={{ item }} global=yes state=present
   with_flattened:
     - npm_global_packages
+
+- name: install_gems
+  gem: name={{ item }} state=present
+  with_flattened:
+    - gems
 
 - name: create_user_log_directory
   file: path=/Users/snark/.log state=directory

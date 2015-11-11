@@ -7,10 +7,16 @@ cask_taps:
   - []
 
 brew_packages_bootstrap:
-  - ['mutt', 'profanity', 'tmate', 'urlview', 'msmtp', 'notmuch', 'offlineimap', 'sshuttle', 'links', 'hub', 'phantomjs']
+  - ['mutt', 'profanity', 'tmate', 'urlview', 'msmtp', 'notmuch', 'offlineimap', 'sshuttle', 'links', 'hub', 'phantomjs', 'homebrew/dupes/ncurses']
+
+brew_link_packages:
+  - ['ncurses']
 
 cask_packages_bootstrap:
   - ['textmate', 'macvim', 'iterm2', 'firefox', 'google-chrome', 'dropbox', '1password', 'apptrap', 'skype', 'slack', 'genymotion', 'vlc', 'jitsi', 'intellij-idea-ce', 'vagrant', 'libreoffice', 'virtualbox', 'limechat', 'deluge', 'phantomjs', 'gpgtools', 'kindle', 'genymotion', 'unrarx', 'flash', 'ynab', 'atom', 'adium']
 
 npm_global_packages:
   - ['aglio']
+
+gems:
+  - ['sup']
